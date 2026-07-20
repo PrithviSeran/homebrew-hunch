@@ -3,12 +3,13 @@ class Hunch < Formula
 
   desc "Drive your Mac focus-free over MCP: OS APIs, AppleScript, CDP, and Accessibility"
   homepage "https://github.com/prithviseran/hunch-mcp"
-  url "https://github.com/prithviseran/hunch-mcp/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "c23506bf7854259766b70c28334cec4c48e03716e0bafa3b78b7945f22c7350a"
+  url "https://github.com/prithviseran/hunch-mcp/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "f57ab6a52bb1681ba4bd47b4ac930da0f2525124a780c447f18303cac93a72de"
   license "Apache-2.0"
 
   depends_on :macos
   depends_on "python@3.13"
+  depends_on "terminal-notifier"   # notifications wear the Hunch logo (osascript can't)
 
   def install
     venv = virtualenv_create(libexec, "python3.13")
