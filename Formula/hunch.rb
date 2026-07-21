@@ -3,8 +3,8 @@ class Hunch < Formula
 
   desc "Drive your Mac focus-free over MCP: OS APIs, AppleScript, CDP, and Accessibility"
   homepage "https://github.com/prithviseran/hunch-mcp"
-  url "https://github.com/prithviseran/hunch-mcp/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "8b4ce057718e265bce0ee714ee80787d2465c76249555bf1161afa884d455336"
+  url "https://files.pythonhosted.org/packages/7e/86/24a64248a0afa6bf55d021cf6dfd0fe8ef7b7e5916dd3d20565e62912315/hunch_sdk-0.3.1.tar.gz"
+  sha256 "858f5e850df958db4f14e7750bad4b4caf3c7d04ddf3f1364c31374f2670b211"
   license "Apache-2.0"
 
   depends_on :macos
