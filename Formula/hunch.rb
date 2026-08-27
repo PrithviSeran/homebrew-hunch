@@ -3,16 +3,16 @@ class Hunch < Formula
 
   desc "Drive your Mac focus-free over MCP: OS APIs, AppleScript, CDP, and Accessibility"
   homepage "https://github.com/prithviseran/hunch-mcp"
-  url "https://files.pythonhosted.org/packages/b2/af/c7311d48f62f1e5dc4a34e7b338d448752b3afcbcb51a826f48f9351bb2c/hunch_sdk-0.5.3.tar.gz"
-  sha256 "1b6d4669d47f71555ab59d1315f7019c5b591f2ae9c9a272c4fc7880f094631d"
+  url "https://files.pythonhosted.org/packages/8d/7f/eefe142fd60dc8d6baddfab84392cb99cb9db577838729fe06d42b0656e5/hunch_sdk-0.6.2.tar.gz"
+  sha256 "a30e3aa01b6e24181efddc166fbf29f060acb5194cb54fb78d5edb5b7a5978ab"
   license "Apache-2.0"
 
   depends_on :macos
   depends_on "python@3.13"
-  depends_on "terminal-notifier"   # notifications wear the Hunch logo (osascript can't)
+  depends_on "terminal-notifier" # notifications wear the Hunch logo (osascript can't)
 
   def install
-    venv = virtualenv_create(libexec, "python3.13")
+    virtualenv_create(libexec, "python3.13")
     # pip resolves the deps (mcp, websocket-client, pyobjc frameworks) from PyPI so
     # pyobjc arrives as prebuilt wheels — compiling its sdists needs Xcode CLT and
     # takes far longer than everything else combined.
